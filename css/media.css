@@ -1,0 +1,864 @@
+/* 1024px 이상일 때 */
+@media (min-width: 1024px) {
+    /* 이 안에 1024px 이상일 때 적용할 스타일을 작성합니다. */
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* 768px ~ 1023px 일 때 */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* 이 안에 768px ~ 1023px 사이일 때 적용할 스타일을 작성합니다. */
+    /* 768px ~ 1023px */
+    #container {
+        width: 100vw;
+    }
+    header {
+        width: 100vw;
+    }
+
+    .nav {
+        width: 100vw;
+        display: flex;
+    }
+
+    .menu__list {
+        width: 100vw;
+        text-align: center;
+        display: flex;
+    }
+
+    .iphone__cart {
+        width: 100%;
+        text-align: center;
+    }
+    .iphone__cart p {
+        font-size: 0.7rem;
+    }
+
+    .slider__text__1,
+    .slider__text__2,
+    .slider__text__3,
+    .slider__text__4 {
+        width: 100vw;
+    }
+    .slider__text__1 h1 {
+        text-align: center;
+    }
+
+    .slider__btn__1,
+    .slider__btn__3,
+    .slider__btn__5,
+    .slider__btn__7 {
+        top: 38%;
+        left: 42%;
+    }
+    .slider__btn__2,
+    .slider__btn__4,
+    .slider__btn__6,
+    .slider__btn__8 {
+        top: 38%;
+        left: 56%;
+    }
+
+    .sec__2__title {
+        width: 100vw;
+        margin-top: 5%;
+    }
+
+    .sec__2__title h1 {
+        font-size: 3rem;
+    }
+
+    .item__list {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    .item__all {
+        width: 360px;
+    }
+
+    .item__all a {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .item__all a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        border-bottom: none;
+        transition: width 0.3s ease;
+    }
+
+    .item__all img {
+        width: 300px;
+    }
+
+    .sec__4__pm {
+        width: 100vw;
+    }
+
+    .sec__4__promo {
+        width: 100vw;
+    }
+    .btn-2 {
+        position: absolute;
+        left: 42%;
+    }
+
+    .sec__5__services {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .services__1,
+    .services__2,
+    .services__3,
+    .services__4,
+    .services__5,
+    .services__6,
+    .services__7 {
+        width: 300px;
+        height: 100px;
+        text-align: center;
+    }
+    .services__1 a,
+    .services__2 a,
+    .services__3 a,
+    .services__4 a,
+    .services__5 a,
+    .services__6 a,
+    .services__7 a {
+        font-size: 24px;
+    }
+
+    .services__7 {
+        display: none;
+    }
+
+    .services__center {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 15%; */
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+    .id__password {
+        width: 100%;
+        height: 300px;
+    }
+
+    .id__password a {
+        font-size: 24px;
+    }
+
+    .video__btn {
+        position: absolute;
+        left: 50%;
+    }
+    .video__slider {
+        margin-top: -250px;
+    }
+
+    .footer__box {
+        width: 100vw;
+        gap: 1rem;
+    }
+}
+
+/* 480px ~ 767px 일 때 */
+@media (min-width: 480px) and (max-width: 767px) {
+    /* 이 안에 480px ~ 767px 사이일 때 적용할 스타일을 작성합니다. */
+    body {
+        overflow-x: hidden;
+    }
+    #container {
+        width: 100vw;
+    }
+    header {
+        width: 100vw;
+        position: relative;
+        background-color: #333;
+        position: fixed;
+        z-index: 4;
+    }
+
+    .nav {
+        width: 100vw;
+        display: flex;
+    }
+
+    .menu__list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        opacity: 0.8;
+        text-align: center;
+        transform: 0.5s;
+    }
+    .menu__list.active {
+        transform: 0.5s;
+        display: flex;
+    }
+    .menu__list li {
+        margin: 10px 0;
+    }
+    .hamburger {
+        display: flex;
+        position: fixed;
+        z-index: 3;
+        transform: 0.5s;
+    }
+
+    .iphone__cart {
+        width: 100vw;
+        text-align: center;
+        background-color: #000;
+    }
+    .iphone__cart p {
+        display: none;
+    }
+
+    .slider__text__1,
+    .slider__text__2,
+    .slider__text__3,
+    .slider__text__4 {
+        width: 100vw;
+    }
+    .slider__text__1 h1 {
+        text-align: center;
+    }
+
+    .slider__btn__1,
+    .slider__btn__3,
+    .slider__btn__5,
+    .slider__btn__7 {
+        top: 38%;
+        left: 37%;
+    }
+    .slider__btn__2,
+    .slider__btn__4,
+    .slider__btn__6,
+    .slider__btn__8 {
+        top: 38%;
+        left: 59%;
+    }
+
+    .swiper-slide h2 {
+        font-size: 1rem;
+    }
+
+    .sec__2__title {
+        width: 100vw;
+        margin-top: 5%;
+    }
+
+    .sec__2__title h1 {
+        font-size: 2rem;
+    }
+
+    .item__list {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    .item__all {
+        width: 360px;
+    }
+
+    .item__all a {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .item__all a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        border-bottom: none;
+        transition: width 0.3s ease;
+    }
+
+    .item__all img {
+        width: 300px;
+    }
+
+    .sec__3__title {
+        width: 100vw;
+        margin-top: -100px;
+    }
+
+    .sec__4_title h1 {
+        font-size: 1.7rem;
+    }
+
+    .sec__4_sub_title {
+        width: 100vw;
+    }
+
+    .sec__4_sub_title h2 {
+        font-size: 1.5rem;
+    }
+
+    .sec__4__pm {
+        width: 100vw;
+    }
+
+    .sec__4__promo {
+        width: 100vw;
+    }
+
+    .sec__4__promo h3 {
+        width: 100vw;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .btn-2 {
+        position: absolute;
+        left: 39%;
+    }
+
+    .btn-3 {
+        position: absolute;
+        left: 61%;
+        border: 1px solid #000;
+    }
+
+    .sec__5__title {
+        width: 100vw;
+    }
+    .sec__5__title h1 {
+        font-size: 2rem;
+    }
+    .sec__5__services {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .services__1,
+    .services__2,
+    .services__3,
+    .services__4,
+    .services__5,
+    .services__6,
+    .services__7 {
+        width: 300px;
+        height: 100px;
+        text-align: center;
+    }
+    .services__1 a,
+    .services__2 a,
+    .services__3 a,
+    .services__4 a,
+    .services__5 a,
+    .services__6 a,
+    .services__7 a {
+        font-size: 24px;
+    }
+
+    .services__7 {
+        display: none;
+    }
+
+    .services__center {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 15%; */
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+    .id__password {
+        width: 100%;
+        height: 300px;
+    }
+
+    .id__password a {
+        font-size: 24px;
+    }
+
+    .sec__6__title {
+        width: 100vw;
+        margin-top: -50px;
+    }
+
+    .sec__6__title h1 {
+        font-size: 1.5rem;
+    }
+
+    .sec__6__title_sub {
+        width: 100vw;
+        margin-top: -50px;
+    }
+
+    .sec__6__title_sub h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .video__text {
+        position: absolute;
+        top: 45%;
+        font-size: 0.875rem;
+    }
+
+    .video__btn {
+        position: absolute;
+        left: 42%;
+    }
+    .video__slider {
+        margin-top: -350px;
+    }
+
+    footer {
+        height: auto;
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        gap: 1rem;
+    }
+
+    .dropdown_main {
+        display: inline-block;
+        user-select: none;
+        position: relative;
+        width: 100vw;
+    }
+
+    .dropdown_bar {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        flex: 1;
+        /* width: 100%; */
+        height: 10px;
+        font-weight: bold;
+        /* border: 1px solid red; */
+    }
+
+    .dropdown_bar svg {
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .dropdown_content {
+        position: absolute;
+        display: none;
+        margin-top: 0px;
+        width: 157px;
+        background: #fff;
+        border-radius: 5%;
+        box-shadow: 4px 4px 10px #c5b0b0;
+        animation: fade-in 1s ease;
+        z-index: 3;
+    }
+
+    .dropdown_content a {
+        text-align: left;
+        color: #000;
+        padding: 0.5rem;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .drop_icon2 {
+        display: none;
+    }
+
+    .footer__end {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        font-weight: bold;
+        /* border: 1px solid red; */
+        position: absolute;
+    }
+
+    .footer__end p {
+        font-size: 13px;
+    }
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* 480px 이하일 때 */
+@media (min-width: 360px) and (max-width: 479px) {
+    body {
+        overflow-x: hidden;
+    }
+    #container {
+        width: 100vw;
+    }
+    header {
+        width: 100vw;
+        position: relative;
+        background-color: #333;
+        position: fixed;
+        z-index: 4;
+    }
+
+    .nav {
+        width: 100vw;
+        display: flex;
+    }
+
+    .menu__list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        opacity: 0.8;
+        text-align: center;
+        transform: 0.5s;
+    }
+    .menu__list.active {
+        transform: 0.5s;
+        display: flex;
+    }
+    .menu__list li {
+        margin: 10px 0;
+    }
+    .hamburger {
+        display: flex;
+        position: fixed;
+        z-index: 3;
+        transform: 0.5s;
+    }
+
+    .iphone__cart {
+        width: 100vw;
+        text-align: center;
+        background-color: #000;
+    }
+    .iphone__cart p {
+        display: none;
+    }
+
+    .slider__text__1,
+    .slider__text__2,
+    .slider__text__3,
+    .slider__text__4 {
+        width: 100vw;
+    }
+    .slider__text__1 h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .slider__btn__1,
+    .slider__btn__3,
+    .slider__btn__5,
+    .slider__btn__7 {
+        top: 38%;
+        left: 33%;
+    }
+    .slider__btn__2,
+    .slider__btn__4,
+    .slider__btn__6,
+    .slider__btn__8 {
+        top: 38%;
+        left: 63%;
+    }
+
+    .swiper-slide h2 {
+        font-size: 1rem;
+    }
+
+    .sec__2__title {
+        width: 100vw;
+        margin-top: 5%;
+    }
+
+    .sec__2__title h1 {
+        font-size: 1.5rem;
+    }
+
+    .item__list {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    .item__all {
+        width: 360px;
+    }
+
+    .item__all a {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .item__all a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        border-bottom: none;
+        transition: width 0.3s ease;
+    }
+
+    .item__all img {
+        width: 300px;
+    }
+
+    .sec__3__title {
+        width: 100vw;
+        margin-top: -100px;
+    }
+
+    .sec__4_title h1 {
+        font-size: 1.5rem;
+    }
+
+    .sec__4_sub_title {
+        width: 100vw;
+    }
+
+    .sec__4_sub_title h2 {
+        font-size: 1.2rem;
+    }
+
+    .sec__4__pm {
+        width: 100vw;
+    }
+
+    .sec__4__promo {
+        width: 100vw;
+    }
+
+    .sec__4__promo h3 {
+        width: 100vw;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .btn-2 {
+        position: absolute;
+        left: 35%;
+    }
+
+    .btn-3 {
+        position: absolute;
+        left: 65%;
+        border: 1px solid #000;
+    }
+
+    .sec__5__title {
+        width: 100vw;
+    }
+    .sec__5__title h1 {
+        font-size: 1.5rem;
+    }
+    .sec__5__services {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .services__1,
+    .services__2,
+    .services__3,
+    .services__4,
+    .services__5,
+    .services__6,
+    .services__7 {
+        width: 300px;
+        height: 100px;
+        text-align: center;
+    }
+    .services__1 a,
+    .services__2 a,
+    .services__3 a,
+    .services__4 a,
+    .services__5 a,
+    .services__6 a,
+    .services__7 a {
+        font-size: 24px;
+    }
+
+    .services__7 {
+        display: none;
+    }
+
+    .services__center {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 15%; */
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+    .id__password {
+        width: 100%;
+        height: 300px;
+    }
+
+    .id__password a {
+        font-size: 24px;
+    }
+
+    .sec__6__title {
+        width: 100vw;
+        margin-top: -50px;
+    }
+
+    .sec__6__title h1 {
+        font-size: 1.2rem;
+    }
+
+    .sec__6__title_sub {
+        width: 100vw;
+        margin-top: -50px;
+    }
+
+    .sec__6__title_sub h2 {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .video__text {
+        position: absolute;
+        top: 45%;
+        font-size: 10px;
+    }
+
+    .video__btn {
+        position: absolute;
+        left: 34%;
+    }
+    .video__slider {
+        margin-top: -350px;
+        /* height: 200px; */
+    }
+
+    footer {
+        height: auto;
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        gap: 1rem;
+    }
+
+    .dropdown_main {
+        display: inline-block;
+        user-select: none;
+        position: relative;
+        width: 100vw;
+    }
+
+    .dropdown_bar {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        flex: 1;
+        /* width: 100%; */
+        height: 10px;
+        font-weight: bold;
+        /* border: 1px solid red; */
+    }
+
+    .dropdown_bar svg {
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .dropdown_content {
+        position: absolute;
+        display: none;
+        margin-top: 0px;
+        width: 157px;
+        background: #fff;
+        border-radius: 5%;
+        box-shadow: 4px 4px 10px #c5b0b0;
+        animation: fade-in 1s ease;
+        z-index: 3;
+    }
+
+    .dropdown_content a {
+        text-align: left;
+        color: #000;
+        padding: 0.5rem;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .drop_icon2 {
+        display: none;
+    }
+
+    .footer__end {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+        /* border: 1px solid red; */
+        position: absolute;
+    }
+
+    .footer__end p {
+        font-size: 10px;
+    }
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
